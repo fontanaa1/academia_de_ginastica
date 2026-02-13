@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at top, #1b1f6b, #05072d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    background-image: url(./fundo.jpg);
+     background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+     background-size: cover; /* Cobre toda a área, cortando se necessário */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* número 404 */
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 150px;
+}
+
+.error span {
+    font-size: 180px;
+    font-weight: bold;
+}
+
+/* astronauta */
+.error img {
+    width: 140px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* animação flutuando */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* botão */
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+    background: #ffffff;
+    color: #05072d;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #dcdcdc;
+    transform: scale(1.05);
+}
